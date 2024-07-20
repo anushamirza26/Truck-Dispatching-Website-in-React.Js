@@ -1,0 +1,105 @@
+  
+  
+  
+  .full-width-photo img {
+    width: 100%;
+    height: 480px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    filter: brightness(0.6);
+  }
+  
+  .full-width-photo .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -67%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.0); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Helvetica bold; 
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .grid-item {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid-item-content {
+    padding: 20px;
+  }
+  
+  .grid-item-content h2 {
+    font-size: 1.5em;
+    color: #088F8F;
+    margin: 0 0 10px;
+  }
+  
+  .grid-item-content p {
+    color: #333;
+    margin: 0 0 10px;
+  }
+  
+  .grid-item-content a {
+    color: #088F8F;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 160px; 
+    height: 200px; 
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .rt{
+    margin: 150px;
+  }
+  /* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px; /* Adjust margin-top as needed */
+  }
+
+  .full-width-photo .text-overlay {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    transform: translate(-50%, -67%);
+  }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  .full-width-photo .text-overlay {
+    font-size: 18px; /* Further reduce font size for extra small screens */
+  }
+  
+  .rt{
+    margin: 100px; /* Adjust margin for smaller screens */
+  }
+}

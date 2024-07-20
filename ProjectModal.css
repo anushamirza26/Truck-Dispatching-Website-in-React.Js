@@ -1,0 +1,73 @@
+/* src/components/ProjectModal.css */
+
+/* Center the modal in the middle of the viewport */
+.ProjectModal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* Style the modal dialog */
+  .modal-dialog {
+    max-width: 800px; /* Set maximum width for the modal */
+  }
+  
+  /* Style the modal content */
+  .modal-content {
+    border-radius: 10px; /* Add rounded corners to the modal content */
+  }
+  
+  /* Style the modal header */
+  .modal-header {
+    background-color: #007bff; /* Blue header background color */
+    color: #fff; /* Header text color */
+    border-top-left-radius: 10px; /* Round top-left corner */
+    border-top-right-radius: 10px; /* Round top-right corner */
+  }
+  
+  /* Style the modal title */
+  .modal-title {
+    margin: 0; /* Remove margin around the title */
+  }
+  
+  /* Style the modal body */
+  .modal-body {
+    padding: 20px; /* Add padding inside the modal body */
+  }
+  
+  /* Style the modal close button */
+  .close {
+    color: #fff; /* Close button color */
+  }
+  
+  /* Style the modal close button on hover */
+  .close:hover {
+    color: #fff; /* Close button color on hover */
+    opacity: 0.75; /* Reduce opacity on hover */
+  }
+  
+  /* Style the modal image */
+  .modal-body img {
+    max-width: 100%; /* Make sure the image fits inside the modal */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto 20px; /* Add margin below the image */
+  }
+  
+  /* Style the modal description */
+  .modal-body p {
+    color: #333; /* Description text color */
+    font-size: 16px; /* Description text size */
+    line-height: 1.5; /* Description text line height */
+  }
+  

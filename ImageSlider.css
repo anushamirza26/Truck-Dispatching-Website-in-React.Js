@@ -1,0 +1,115 @@
+/* src/components/ImageSlider.css */
+
+.image-slider {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  flex-direction: column; /* Ensure children are stacked vertically */
+  align-items: center;
+    
+}
+.image-slider1 {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  text-align: center;
+}
+.image-slider img {
+
+  width: 100%;
+  max-height: 650px;
+  object-fit: cover; /* Ensure images cover the container without distortion */
+}
+
+.slider-title {
+  padding-top: 40px;
+  text-align: center;
+ 
+  font-size: 2em;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22%; /* Adjusted for responsiveness */
+  margin-top: 60px;
+}
+
+.icon-container img {
+  height: 60px;
+  width: 60px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  gap: 20%; /* Adjusted for responsiveness */
+  }
+
+.container4 h2{
+  font-size: 3.1em;
+}
+.container1 h3,
+.container1 p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container1,
+  .icon-container {
+    flex-direction:row; /* Stack items vertically on smaller screens */
+    gap: 20px; /* Adjusted gap for smaller screens */
+  }
+  .image-slider img {
+  
+    margin-top: 50px;}
+    .container4 {
+      height: auto; /* Adjusted height for responsiveness */
+    }
+}
+
+.container4 {
+  height: 110px;
+  width: 100%;
+  background-color: #088F8F;
+  color: black;
+  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+
+/* Media Query for smaller devices */
+@media screen and (max-width: 460px) {
+
+  .image-slider img {
+  
+    margin-top: 50px;}
+}

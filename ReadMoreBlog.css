@@ -1,0 +1,138 @@
+
+.an{
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+  
+  .full-width-photo1 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    flex-direction: column; /* Ensure children are stacked vertically */
+    align-items: center;
+  }
+  
+  .full-width-photo1 img {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    filter: brightness(0.6);
+    overflow: hidden;
+  }
+  
+  .full-width-photo1 .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.0); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Helvetica bold;
+  }
+  
+  .content-section {
+    padding: 20px 100px;
+    background-color: #f9f9f9;
+  }
+  
+  .content-section h2 {
+    color: #333;
+  }
+  
+  .content-section p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .content-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  ul {
+    color: #666;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 160px; 
+    height: 200px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+ /* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .an {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    margin-right: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  .full-width-photo1 .text-overlay {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+  
+  .content-section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+/* For screens smaller than 480px */
+@media screen and (max-width: 460px) {
+  .an {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    margin-right: 10px; 
+    text-align: center;
+    flex-direction:column;  
+  }
+.content-section img{
+   /* Adjust margin for smaller screens */
+    margin-right: 1000px; 
+    padding-right: 100px;
+}
+ 
+  .full-width-photo1 .text-overlay {
+    font-size: 18px; /* Further reduce font size for very small screens */
+  }
+
+  .content-section {
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+  .scroll-to-top{
+    margin-right: 80%;
+  }
+}
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .full-width-photo1 img {
+    max-height: 250px; /* Reduce max-height for smaller screens */
+
+  }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  .full-width-photo1 img {
+    max-height: 200px; /* Further reduce max-height for extra small screens */
+    max-width: 300px;
+  }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+  .full-width-photo1 img {
+    max-height: 150px; /* Adjust max-height for very small screens */
+    max-width: 440px;
+    text-align: left;
+  }
+}

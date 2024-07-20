@@ -1,0 +1,171 @@
+/* File path: src/components/ContactForm.css */
+
+.contact-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    background-color:rgb(236, 236, 236);
+    height: 1200px;
+    text-align: left;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contact-header div {
+    width: 48%;
+}
+
+.contact-header span {
+    font-size: 50px;
+    color: #FFA500;
+}
+
+.contact-header p {
+    margin: 5px 0;
+}
+
+.form1-section {
+    margin-top: 7px;
+    margin-bottom: 100px;
+}
+
+.form1-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.forlbl {
+    display: flex;
+    gap: 420px;
+    margin-bottom: 10px;
+}
+
+.form1-group input {
+    width: 48%;
+}
+
+.form1-full-width {
+    width: 100%;
+}
+
+.submit-button {
+    width: 22%;
+    height: 50px;
+    padding: 10px;
+    background-color: #088F8F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.a {
+    width: 1200px;
+    padding-left: 50px;
+    margin-right: 0%;
+}
+
+.b {
+    font-size: 4.5em;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.imgset {
+    background-color: #fff;
+    border: 2px solid black;
+    margin-left: 20px;
+    height: 190px;
+    width: 270px;
+    padding-top: 10px;
+}
+
+.boss {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .a {
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-header div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form1-group {
+        flex-direction: column;
+    }
+
+    .form1-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+
+    .forlbl {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-header span {
+        font-size: 30px;
+    }
+
+    .b {
+        font-size: 3em;
+    }
+
+    .imgset {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-container {
+        padding: 10px;
+        height: auto;
+    }
+
+    .contact-header {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .b {
+        font-size: 2em;
+    }
+
+    .imgset {
+        height: 120px;
+        width: 160px;
+    }
+}

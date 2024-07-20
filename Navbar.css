@@ -1,0 +1,79 @@
+/* src/components/Navbar.css */
+.body{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.custom-navbar {
+  background-color: white !important;
+  color: black !important;
+  height: 80px; /* Adjust the height as needed */
+}
+
+.navbar-logo{
+  width: 200px;
+  height: 150px;
+}
+.custom-navbar .navbar-brand {
+  color: black !important;
+  font-weight: bold;
+  margin-right: auto; /* Push the brand to the extreme left */
+}
+
+.custom-navbar .nav-link {
+  color: black !important;
+  font-weight: bold;
+  margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #e3e1e1 !important; /* Slightly darker color on hover */
+}
+
+.custom-navbar .navbar-collapse {
+  justify-content: flex-end; /* Align links to the right */
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    height: 60px; /* Adjust the height for smaller screens */
+    margin-bottom: 50%;
+  }
+
+  .custom-navbar .nav-link {
+    margin-right: 10px; /* Reduce spacing on smaller screens */
+    font-size: 0.9rem; /* Adjust font size for readability */
+  }
+
+  .custom-navbar .navbar-brand {
+    font-size: 1.2rem; /* Adjust brand font size for readability */
+  }
+
+  .justify-content-end1{
+    width: 70px;
+    background-color: #fff;
+    height: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
+}
+
+@media (max-width: 480px) {
+  .custom-navbar {
+    height: 50px; /* Further adjust height for very small screens */
+    margin-bottom: 50%;
+  }
+
+  .custom-navbar .nav-link {
+    margin-right: 5px; /* Further reduce spacing */
+    font-size: 0.8rem; /* Further adjust font size */
+  }
+
+  .custom-navbar .navbar-brand {
+    font-size: 1rem; /* Further adjust brand font size */
+  }
+  .justify-content-end1{
+            width: 50px;
+            background-color: #fff;
+            height: 40px;
+            text-align: center;
+  }
+}

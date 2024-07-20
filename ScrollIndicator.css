@@ -1,0 +1,23 @@
+/* src/components/ScrollIndicator.css */
+.scroll-indicator {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indicator {
+  width: 5px;
+  height: 20px;
+  margin: 10px 0;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #007bff;
+}
